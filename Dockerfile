@@ -13,7 +13,7 @@ RUN sed -i 's/^# *\(en_US.UTF-8\)/\1/' /etc/locale.gen && \
  apt-get --purge autoremove -y && \
  apt-get clean -y
 
-RUN npm install -g @aws-amplify/cli && \
+RUN npm install -g @aws-amplify/cli@6.3.1 && \
  npm install -g amplify-category-video && \
  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
  unzip awscliv2.zip && \
