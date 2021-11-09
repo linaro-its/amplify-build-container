@@ -1,0 +1,5 @@
+A simple Docker container to simplify building and deploying the Amplify-based Linaro Resources Hub.
+
+Build with `docker build --no-cache --rm -t amplifybuild .`
+
+Use `scripts/build_and_deploy.sh` to run the container and optionally run one of the deploy scripts, e.g. `deploy_serverless.sh`.
