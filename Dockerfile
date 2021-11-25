@@ -23,7 +23,8 @@ RUN rm -rf \
  /tmp/* \
  /var/cache/* \
  /var/lib/apt/lists/* \
- /var/log/*
+ /var/log/* && \
+ mkdir /yarn && chmod a+rw /yarn
 
 ENV LC_ALL en_US.UTF-8
 ENV LANG en_US.UTF-8
